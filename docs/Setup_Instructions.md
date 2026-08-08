@@ -2,7 +2,7 @@
 
 ## JDK Version Used
 
-This project was built and tested with **OpenJDK 21** (`21.0.10`).
+This project was built and tested with **OpenJDK 21** (Eclipse Temurin build `21.0.12`).
 
 Check your version with:
 
@@ -49,9 +49,25 @@ java HelloWorld
 
 Expected output:
 
-```
 Hello, World!
-```
+
+
+### Verification Output
+
+Ran the above on this machine with JDK 21 (Temurin 21.0.12) installed via
+Adoptium. Output confirmed:
+
+PS> java -version
+openjdk version "21.0.12" 2026-07-21 LTS
+OpenJDK Runtime Environment Temurin-21.0.12+8 (build 21.0.12+8-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.12+8 (build 21.0.12+8-LTS, mixed mode, sharing)
+
+PS> javac -version
+javac 21.0.12
+
+PS> java HelloWorld
+Hello, World!
+
 
 If that prints correctly, your JDK setup is good and you're ready to
 compile LearnTrack itself — see the main `README.md` for exact build
